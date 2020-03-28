@@ -1,0 +1,28 @@
+﻿﻿<!DOCTYPE HTML>
+<html>
+
+<body>
+ <script>
+
+let digit = {
+number: prompt("Введите число от 1 до 999."),
+hundreds: 0,
+dozens: 0,
+units: 0,
+};
+
+if (digit.number.length > 3){
+console.log("Ошибка! Вы ввели слишком много цифр");
+}else {
+digit.hundreds = Math.floor(digit.number/100);
+digit.dozens = Math.floor((digit.number - (digit.hundreds * 100)) / 10);
+digit.units = Math.floor(digit.number - (digit.hundreds * 100) - (digit.dozens * 10));
+};
+
+console.log(digit);
+
+
+ </script>
+</body>
+
+</html> 
